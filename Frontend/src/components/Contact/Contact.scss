@@ -1,0 +1,82 @@
+// Variables pour les couleurs et les styles
+$primary-color: #4CAF50;
+$primary-color-hover: #45a049;
+$border-color: #ccc;
+$form-background: #ffffff;
+$page-background: #f9f9f9;
+$text-color: #000000;
+$font-size: 14px;
+$border-radius: 5px;
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: $page-background;
+
+  h2 {
+    color: $text-color;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid lighten($border-color, 20%);
+    border-radius: 10px;
+    background-color: $form-background;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    // Imbrication des champs input et textarea
+    div{
+      width:100%;
+      input[type="text"],
+      input[type="email"],
+      textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      font-size: $font-size;
+      box-sizing: border-box;
+    }
+    }
+    
+
+    // Style pour le bouton
+    button[type="submit"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: $border-radius;
+      background-color: $primary-color;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+
+      &:hover {
+        background-color: $primary-color-hover;
+      }
+    }
+
+    label {
+      align-self: flex-start;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  }
+
+  p {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+  }
+}
