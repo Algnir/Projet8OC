@@ -48,7 +48,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="Form" id="contact">
+    <section id="contact">
+    <div className="Form">
       <h2>Contactez-moi</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -86,6 +87,7 @@ const ContactForm = () => {
       </form>
       {status && <p>{status}</p>}
     </div>
+    </section>
   );
 };
 
