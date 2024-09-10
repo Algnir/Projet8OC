@@ -1,3 +1,9 @@
 #accueil{
     background-color: var(--background-color2);
+    .banner{
+        h2{
+            margin:0;
+            color :var(--text-color2);
+        }
+    }
 }

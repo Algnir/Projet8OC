@@ -1,3 +1,4 @@
+import './Header.scss'
 function Header() {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
