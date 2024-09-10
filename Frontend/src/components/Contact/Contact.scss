@@ -1,5 +1,5 @@
 // Variables pour les couleurs et les styles
-$primary-color: #4CAF50;
+$primary-color: #4caf50;
 $primary-color-hover: #45a049;
 $border-color: #ccc;
 $form-background: #ffffff;
@@ -7,6 +7,13 @@ $page-background: #f9f9f9;
 $text-color: #000000;
 $font-size: 14px;
 $border-radius: 5px;
+
+.captcha {
+  div {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .Form {
   display: flex;
@@ -34,22 +41,20 @@ $border-radius: 5px;
     background-color: $form-background;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    // Imbrication des champs input et textarea
-    div{
-      width:100%;
+    div {
+      width: 100%;
       input[type="text"],
       input[type="email"],
       textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid $border-color;
-      border-radius: $border-radius;
-      font-size: $font-size;
-      box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        font-size: $font-size;
+        box-sizing: border-box;
+      }
     }
-    }
-    
 
     // Style pour le bouton
     button[type="submit"] {
