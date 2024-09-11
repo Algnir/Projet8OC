@@ -1,0 +1,106 @@
+/*--primary-color: #000000; var(--primary-color);*/
+/*--secondary-color: #fff; var(--secondary-color);*/
+/* --background-color1: #f9f9f9; var(--background-color1);*/
+/* --background-color2: #000000; var(--background-color2);*/
+/*--text-color1: #000000; var(--text-color1);*/
+/* --text-color2: #fff; var(--text-color2);*/
+
+#projets {
+  background: var(--background-color2);
+
+  .projets-title {
+    color: var(--text-color2);
+  }
+  .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    padding: 50px;
+    .swiper-wrapper {
+      align-items: center;
+  }
+}
+  
+
+  .card {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; // Couleur de fond de la carte
+    border: 1px solid #e0e0e0; // Bordure légère autour de la carte
+    border-radius: 8px; // Coins arrondis pour un effet plus doux
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Ombre légère pour ajouter de la profondeur
+    overflow: hidden; // Assure que le contenu ne dépasse pas les limites de la carte
+    width: 100%; // Assurez-vous que la carte prend toute la largeur disponible
+    max-width: 300px; // Limite la largeur maximale de la carte
+    margin: 0 auto; // Centre la carte horizontalement
+    transition: transform 0.3s, box-shadow 0.3s; // Animation sur le survol
+  
+    &:hover {
+      transform: scale(1.1); // Augmente légèrement la taille de la carte au survol
+      box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7); // Ombre blanche plus forte au survol
+    }
+  
+    &:active {
+      transform: scale(1.05); // Réduit légèrement la taille de la carte lorsqu'elle est cliquée
+    }
+  
+    .card-image {
+      width: 100%; // L'image prend toute la largeur de la carte
+      height: auto; // Maintient le ratio de l'image
+      display: block; // Supprime l'espace blanc en bas de l'image
+      border-bottom: 1px solid #e0e0e0; // Sépare l'image du contenu textuel
+    }
+  
+    .card-title {
+      font-size: 1.5rem; // Taille de police pour le titre
+      font-weight: bold; // Titre en gras
+      color: #333; // Couleur du texte
+      margin: 16px; // Espace autour du titre
+      text-align: center; // Centre le titre horizontalement
+    }
+  
+    .card-description {
+      font-size: 1rem; // Taille de police pour la description
+      color: #666; // Couleur du texte de la description
+      line-height: 1.5; // Hauteur de ligne pour rendre le texte plus lisible
+      margin: 0 16px 16px; // Marge autour de la description
+      text-align: center; // Centre le texte de la description
+    }
+  
+    .git-button {
+      background-color: #333; // Couleur de fond du bouton
+      color: #fff; // Couleur du texte du bouton
+      border: none; // Supprime la bordure par défaut
+      border-radius: 4px; // Coins légèrement arrondis
+      padding: 10px 16px; // Espacement interne du bouton
+      margin: 16px; // Espace autour du bouton
+      font-size: 1rem; // Taille de police du bouton
+      cursor: pointer; // Change le curseur en pointeur pour indiquer qu'il est cliquable
+      display: flex; // Utilise flexbox pour aligner le contenu du bouton
+      align-items: center; // Centre verticalement le contenu
+      gap: 8px; // Espace entre l'icône et le texte
+      transition: background-color 0.3s, transform 0.3s; // Transition pour le changement de couleur de fond et l'effet de transformation
+  
+      &:hover {
+        background-color: #555; // Change la couleur de fond sur le survol
+      }
+  
+      img {
+        width: 20px; // Taille de l'icône GitHub
+        height: 20px; // Assure que l'icône est carrée
+      }
+    }
+  }
+  
+  
+  
+
+  .swiper-button-next,
+.swiper-button-prev {
+  color: var(--background-color1); /* Modifier la couleur des boutons de navigation */
+}
+
+.swiper-pagination-bullet {
+  background: var(--background-color1); /* Modifier la couleur des points de pagination */
+}
+}
+
