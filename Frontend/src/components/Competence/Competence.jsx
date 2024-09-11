@@ -2,7 +2,7 @@ import ModalCard from "./Modal-Card.jsx"; // image, title, description, tag
 import "./Competence.scss";
 import ImageFrontend from "../../images/frontend.svg";
 import ImageBackend from "../../images/nodejsStackedBlack.svg";
-import ImageGestion from "../../images/gestion.png";
+import ImageGestion from "../../images/google-lighthouse.svg";
 
 function Competence() {
   return (
