@@ -3,7 +3,7 @@ const router = express.Router();
 
 const projectsCtrl = require('../controllers/projects');
 
-router.get('/:tag', projectsCtrl.getProjectsByTag);
+router.get('/', projectsCtrl.getProjectsByTag);
 
 
 module.exports = router;
