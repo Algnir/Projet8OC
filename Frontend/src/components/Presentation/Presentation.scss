@@ -1,34 +1,23 @@
-:root {
-    --primary-color: #000000;  /*var(--primary-color);*/
-    --secondary-color: #fff;   /*var(--secondary-color);*/
-    --background-color1: #fff;  /*var(--background-color1);*/
-    --background-color2:#000000;    /*var(--background-color2);*/
-    --text-color1: #000000;  /*var(--text-color1);*/
-    --text-color2: #fff;    /*var(--text-color2);*/
-  }
+#presentation {
+  .presentation {
+    background-color: var(--background-color1);
+    padding: 0 20px;
+    .presentation-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 20px;
+    }
 
-.presentation{
-    background-color:var(--background-color1);
-    padding:50px 20px;
-.presentation-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
-  }
-  
-  .presentation-image {
-    width: 40%; /* Ajuste la taille de l'image */
-    max-width: 300px; /* Limite la taille maximale de l'image */
-    margin-right: 20px; /* Espace entre l'image et le texte */
-  }
-  
-  .presentation-text {
-    width: 40%; /* Ajuste la largeur de la section texte */
-    text-align: left;
-  }
-  
-  h2, h3 {
-    margin-top: 0;
+    .presentation-image {
+      width: 40%; /* Ajuste la taille de l'image */
+      max-width: 300px; /* Limite la taille maximale de l'image */
+      margin-right: 20px; /* Espace entre l'image et le texte */
+    }
+
+    .presentation-text {
+      width: 40%; /* Ajuste la largeur de la section texte */
+      text-align: left;
+    }
   }
 }

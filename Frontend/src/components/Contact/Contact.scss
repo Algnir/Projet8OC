@@ -20,12 +20,10 @@ $border-radius: 5px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
   background-color: $page-background;
 
   h2 {
     color: $text-color;
-    margin-bottom: 20px;
   }
 
   form {
@@ -39,6 +37,7 @@ $border-radius: 5px;
     border-radius: 10px;
     background-color: $form-background;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
 
     div {
       width: 100%;
@@ -55,7 +54,6 @@ $border-radius: 5px;
       }
     }
 
-    // Style pour le bouton
     button[type="submit"] {
       padding: 10px 20px;
       border: none;

@@ -1,9 +1,66 @@
-#accueil{
-    background-color: var(--background-color2);
-    .banner{
-        h2{
-            margin:0;
-            color :var(--text-color2);
-        }
+#accueil {
+  background-color: var(--background-color2);
+  height: 93vh;
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+  .banner {
+    h2 {
+      margin: 0;
+      color: var(--text-color2);
+      margin-left: 40px;
     }
+  }
+
+  .scroll {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    bottom: 75px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: -15px;
+    display: block;
+    z-index: 10;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    /* Animation pulsante par défaut */
+    animation: pulse 2s infinite;
+
+    &:hover {
+      animation: none; /* Désactiver l'animation pendant le hover */
+      transform: scale(1.1, 1.1);
+      box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7);
+    }
+
+    &:active {
+      transform: scale(1.05, 1.05);
+    }
+
+    p {
+      color: white;
+      text-align: center;
+    }
+  }
+}
+
+/* Définition de l'animation pulsante */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+  }
 }

@@ -1,15 +1,9 @@
-#competences{
+#competences {
   background: var(--background-color2);
 }
 
-.competence{
-  padding : 40px;
-}
-
 .competence-title {
-  padding: 40px;
-  margin:0;
-  color:var(--text-color2);
+  color: var(--text-color2);
 }
 
 .card-container {
@@ -28,7 +22,7 @@
   max-width: 300px;
   box-sizing: border-box;
   text-align: center;
-  cursor:pointer;
+  cursor: pointer;
   transition: all 0.5s;
   &:hover {
     transform: scale(1.1, 1.1);
@@ -36,7 +30,6 @@
   }
   &:active {
     transform: scale(1.05, 1.05);
-
   }
 }
 
@@ -89,7 +82,7 @@
     box-sizing: border-box;
     text-align: center;
     margin: 25px;
-    cursor:default;
+    cursor: default;
   }
 
   .card-image {
@@ -112,8 +105,8 @@
   }
 
   .git-button {
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     border: 0;
     background-color: rgb(254, 95, 85);
     height: 45px;
@@ -124,9 +117,9 @@
     cursor: pointer;
     transition: all 0.5s;
     user-select: none;
-    
-    img{
-      margin-right:4px;
+
+    img {
+      margin-right: 4px;
     }
 
     &:hover {
