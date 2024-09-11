@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./Projets.scss";
 import Card from "./Card.jsx";
-import { Swiper, SwiperSlide } from "swiper/react"; // Importer les composants React de Swiper
 
-// Importer uniquement les styles CSS nécessaires de Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-
-import { Navigation, Pagination, Scrollbar } from "swiper/modules"; // Importer les modules requis de Swiper
+import { Navigation, Pagination, Scrollbar } from "swiper/modules";
 
 function Projets() {
   const [Cards, setCards] = useState([]);
@@ -46,7 +44,7 @@ function Projets() {
             navigation
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
-            modules={[Navigation, Pagination, Scrollbar]} // Utiliser les modules nécessaires
+            modules={[Navigation, Pagination, Scrollbar]}
           >
             {Cards.map((card) => (
               <SwiperSlide key={card.id}>
