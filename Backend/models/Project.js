@@ -7,6 +7,7 @@ const projectSchema = mongoose.Schema({
     description: { type: String },
     github: { type: String },
     tag: { type: String, required: true },
+    logo: { type: String, required: true },
 });
 
 module.exports = mongoose.model('Project', projectSchema);
