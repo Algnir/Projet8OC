@@ -20,6 +20,8 @@
   }
 
   .card {
+    position:relative;
+    height:450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +34,7 @@
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
+    padding:20px;
     transition: transform 0.3s, box-shadow 0.3s;
 
     &:hover {
@@ -45,26 +48,39 @@
 
     .card-image {
       width: 100%;
-      height: auto;
+      height: 200px;
       display: block;
       border-bottom: 1px solid #e0e0e0;
+      border-radius:8px;
+      object-fit: cover;
+      object-position: center;
     }
 
     .card-title {
-      font-size: 1.5rem;
       font-weight: bold;
       color: #333;
       margin: 16px;
       text-align: center;
+      margin:5px 0;
     }
 
     .card-description {
-      font-size: 1rem;
       color: #666;
-      line-height: 1.5;
-      margin: 0 16px 16px;
+      line-height: 1.4;
+      margin: 0;
       text-align: center;
     }
+    .logo-container{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      display: flex;
+      gap: 4px;
+      .logo{
+        height: 20px;
+      }
+    }
+    
 
     .git-button {
       background-color: #333;

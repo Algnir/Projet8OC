@@ -19,7 +19,7 @@ function Header() {
             <a href="#presentation" onClick={(e) => { e.preventDefault(); scrollToSection("presentation"); }}>Présentation</a>
           </li>
           <li>
-            <a href="#competences" onClick={(e) => { e.preventDefault(); scrollToSection("competences"); }}>Compétences</a>
+            <a href="#projets" onClick={(e) => { e.preventDefault(); scrollToSection("projets"); }}>Mes projets</a>
           </li>
           <li>
             <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}>Contact</a>

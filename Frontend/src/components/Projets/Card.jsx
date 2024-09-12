@@ -1,5 +1,5 @@
-import githubsvg from '../../images/github.svg';
-const Card = ({ image, title, description, githubLink }) => {
+import githubsvg from "../../images/github.svg";
+const Card = ({ image, title, description, githubLink, logo }) => {
   const gitOpen = () => {
     window.open(githubLink, "_blank");
   };
@@ -8,9 +8,17 @@ const Card = ({ image, title, description, githubLink }) => {
     <>
       <div className="card">
         <img src={image} className="card-image" />
-        <h2 className="card-title">{title}</h2>
+        <h3 className="card-title">{title}</h3>
         <p className="card-description">{description}</p>
-        <button className="git-button" onClick={gitOpen}><img src={githubsvg}/>Github</button>
+        <button className="git-button" onClick={gitOpen}>
+          <img src={githubsvg} />
+          Github
+        </button>
+        <div className="logo-container">
+        {logo.map((item, index) => (
+          <img key={index} src={item} className="logo" />
+        ))}
+        </div>
       </div>
     </>
   );
