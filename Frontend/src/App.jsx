@@ -6,7 +6,6 @@ import Projets from './components/Projets/Projets.jsx';
 import Contact from './components/Contact/Contact.jsx';
 
 function App() {
-
   return (
     <>
     <main>

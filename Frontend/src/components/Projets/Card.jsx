@@ -1,12 +1,23 @@
+import React, { useState, useEffect } from "react";
 import githubsvg from "../../images/github.svg";
+import Modal from "react-modal";
 const Card = ({ image, title, description, githubLink, logo }) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
   const gitOpen = () => {
     window.open(githubLink, "_blank");
+  };
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
   };
 
   return (
     <>
-      <div className="card">
+      <div className="card" onClick={openModal}>
         <img src={image} className="card-image" />
         <h3 className="card-title">{title}</h3>
         <p className="card-description">{description}</p>
@@ -15,11 +26,46 @@ const Card = ({ image, title, description, githubLink, logo }) => {
           Github
         </button>
         <div className="logo-container">
-        {logo.map((item, index) => (
-          <img key={index} src={item} className="logo" />
-        ))}
+          {logo.map((item, index) => (
+            <img key={index} src={item} className="logo" />
+          ))}
         </div>
       </div>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Modal"
+        className="modal-content"
+        overlayClassName="modal-overlay"
+      >
+        <h3 className="">{title}</h3>
+        <h4>Contexte du projet</h4>
+        <p>
+          Hae duae provinciae bello quondam piratico catervis mixtae praedonum a
+          Servilio pro consule missae sub iugum factae sunt vectigales. et hae
+          quidem regiones velut in prominenti terrarum lingua positae ob orbe
+          eoo monte Amano disparantur.
+        </p>
+        <h4>Ce que j'ai appris</h4>
+        <p>
+          Hae duae provinciae bello quondam piratico catervis mixtae praedonum a
+          Servilio pro consule missae sub iugum factae sunt vectigales. et hae
+          quidem regiones velut in prominenti terrarum lingua positae ob orbe
+          eoo monte Amano disparantur.
+        </p>
+        <h4>Technologies utilisées</h4>
+        <div className="logo-container">
+          {logo.map((item, index) => (
+            <img key={index} src={item} className="logo-modal" />
+          ))}
+        </div>
+        <div className="button-container">
+          <button className="git-button" onClick={gitOpen}>
+            <img src={githubsvg} />
+            Github
+          </button>
+        </div>
+      </Modal>
     </>
   );
 };
