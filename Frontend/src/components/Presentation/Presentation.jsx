@@ -1,5 +1,5 @@
 import './presentation.scss';
-import Image from '../../images/pp-Card.jpg';
+import Image from '../../images/pp-Card.png';
 function Presentation() {
   return (
     <>
