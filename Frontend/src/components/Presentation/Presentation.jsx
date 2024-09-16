@@ -1,4 +1,4 @@
-import './presentation.scss';
+import './Presentation.scss';
 import Image from '../../images/pp-Card.png';
 function Presentation() {
   return (
