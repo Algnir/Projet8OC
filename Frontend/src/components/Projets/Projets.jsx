@@ -9,7 +9,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Navigation, Pagination, Scrollbar } from "swiper/modules";
 
-
 function Projets() {
   const [Cards, setCards] = useState([]);
   const [error, setError] = useState("");
@@ -55,6 +54,8 @@ function Projets() {
                   description={card.description}
                   githubLink={card.github}
                   logo={card.logo}
+                  context={card.modal.context}
+                  learned={card.modal.learned}
                 />
               </SwiperSlide>
             ))}

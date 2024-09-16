@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import githubsvg from "../../images/github.svg";
 import Modal from "react-modal";
-const Card = ({ image, title, description, githubLink, logo }) => {
+const Card = ({ image, title, description, githubLink, logo, context, learned}) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const gitOpen = () => {
@@ -41,17 +41,11 @@ const Card = ({ image, title, description, githubLink, logo }) => {
         <h3 className="">{title}</h3>
         <h4>Contexte du projet</h4>
         <p>
-          Hae duae provinciae bello quondam piratico catervis mixtae praedonum a
-          Servilio pro consule missae sub iugum factae sunt vectigales. et hae
-          quidem regiones velut in prominenti terrarum lingua positae ob orbe
-          eoo monte Amano disparantur.
+          {context}
         </p>
         <h4>Ce que j'ai appris</h4>
         <p>
-          Hae duae provinciae bello quondam piratico catervis mixtae praedonum a
-          Servilio pro consule missae sub iugum factae sunt vectigales. et hae
-          quidem regiones velut in prominenti terrarum lingua positae ob orbe
-          eoo monte Amano disparantur.
+          {learned}
         </p>
         <h4>Technologies utilisées</h4>
         <div className="logo-container">
