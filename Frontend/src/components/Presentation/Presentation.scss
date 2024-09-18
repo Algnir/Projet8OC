@@ -19,7 +19,7 @@
       width: 40%; /* Ajuste la taille de l'image */
       max-width: 300px; /* Limite la taille maximale de l'image */
       margin-right: 20px; /* Espace entre l'image et le texte */
-      border-radius:8px;
+      border-radius: 8px;
     }
 
     .presentation-text {
@@ -28,8 +28,6 @@
     }
   }
 }
-
-
 
 @media (max-width: 768px) {
   #presentation {

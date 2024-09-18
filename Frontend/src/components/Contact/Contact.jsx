@@ -49,44 +49,44 @@ const ContactForm = () => {
 
   return (
     <section id="contact">
-    <div className="Form">
-      <h2>Contactez-moi</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Votre nom:</label>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
+      <div className="Form">
+        <h2>Contactez-moi</h2>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label>Votre nom:</label>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <label>Votre email:</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <label>Message:</label>
+            <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            ></textarea>
+          </div>
+          <ReCAPTCHA
+            sitekey="6Lf-tjwqAAAAAK3OpWb1tUIPGr0CqVOfrOXSqEC0"
+            onChange={handleCaptchaChange}
+            className="captcha"
           />
-        </div>
-        <div>
-          <label>Votre email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label>Message:</label>
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          ></textarea>
-        </div>
-        <ReCAPTCHA
-          sitekey="6Lf-tjwqAAAAAK3OpWb1tUIPGr0CqVOfrOXSqEC0"
-          onChange={handleCaptchaChange}
-          className="captcha"
-        />
-        <button type="submit">Envoyer</button>
-      </form>
-      {status && <p>{status}</p>}
-    </div>
+          <button type="submit">Envoyer</button>
+        </form>
+        {status && <p>{status}</p>}
+      </div>
     </section>
   );
 };

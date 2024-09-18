@@ -1,4 +1,4 @@
-import './Header.scss'
+import "./Header.scss";
 function Header() {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -12,24 +12,61 @@ function Header() {
       <h1>Clovis PATOUÉ</h1>
       <nav>
         <ul>
-          <li>
-            <a href="#accueil" onClick={(e) => { e.preventDefault(); scrollToSection("accueil"); }}>Accueil</a>
+          <li id="btn-accueil">
+            <a
+              href="#accueil"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("accueil");
+              }}
+            >
+              Accueil
+            </a>
           </li>
           <li>
-            <a href="#presentation" onClick={(e) => { e.preventDefault(); scrollToSection("presentation"); }}>Présentation</a>
+            <a
+              href="#presentation"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("presentation");
+              }}
+            >
+              Présentation
+            </a>
           </li>
           <li>
-            <a href="#projets" onClick={(e) => { e.preventDefault(); scrollToSection("projets"); }}>Mes projets</a>
+            <a
+              href="#projets"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("projets");
+              }}
+            >
+              Mes projets
+            </a>
           </li>
           <li>
-            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}>Contact</a>
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("contact");
+              }}
+            >
+              Contact
+            </a>
           </li>
           <li>
-            <a href="https://github.com/Algnir?tab=repositories" target="_blank">Github</a>
+            <a
+              href="https://github.com/Algnir?tab=repositories"
+              target="_blank"
+            >
+              Github
+            </a>
           </li>
         </ul>
       </nav>
-      </header>
+    </header>
   );
 }
 

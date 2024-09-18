@@ -53,3 +53,49 @@ header {
     }
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    align-items: start;
+    height: auto;
+    flex-direction: column;
+    h1 {
+      text-align: left;
+      font-size: 1.2em;
+      margin: 1vh 0 0 2vh;
+    }
+    nav {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      ul {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        li {
+          padding: 1vw;
+          margin: 0;
+          width: 25%;
+          border: 1px solid #fafafa69;
+          text-align: center;
+          a {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+  #btn-accueil {
+    display: none;
+  }
+  nav ul li {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

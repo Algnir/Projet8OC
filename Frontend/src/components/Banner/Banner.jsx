@@ -1,5 +1,5 @@
 import "./Banner.scss";
-import ParticlesComponent from './particles.jsx';
+import ParticlesComponent from "./particles.jsx";
 
 function Banner() {
   const scrollToSection = (id) => {
@@ -12,7 +12,7 @@ function Banner() {
   return (
     <section id="accueil">
       <div className="particles-container">
-      <ParticlesComponent id="particles" />
+        <ParticlesComponent id="particles" />
       </div>
       <div className="banner">
         <h2>Bienvenue sur mon Portfolio de développeur web</h2>
