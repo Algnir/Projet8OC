@@ -182,9 +182,6 @@
 
 @media (max-width: 1024px) {
   #projets {
-    .swiper {
-      overflow: visible !important; /* Permet aux cartes d'être visibles au-delà de leurs bordures */
-    }
     .card {
       max-width: 30vw;
       .card-title {
