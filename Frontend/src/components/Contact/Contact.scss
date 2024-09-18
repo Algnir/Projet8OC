@@ -79,3 +79,14 @@
     font-weight: bold;
   }
 }
+
+
+@media (max-width: 768px){
+  #contact{
+    .Form{
+      form {
+        max-width: 300px;
+      }
+    }
+  }
+}
