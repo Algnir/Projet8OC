@@ -22,10 +22,6 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section{
-  padding:40px;
-}
-
 h2 {
   font-size: 2em;
   text-align: center;
@@ -39,14 +35,20 @@ p {
   text-align: justify;
 }
 
-@media (max-width: 768px) {
-  .card {
-    width: calc(50% - 20px);
+@media (min-width: 768px) {
+  section {
+    padding: 20px;
   }
 }
 
-@media (max-width: 480px) {
-  .card {
-    width: 100%;
+@media (max-width: 768px) {
+  section {
+    padding: 0;
+    h2 {
+      font-size: 2em;
+      text-align: center;
+      color: var(--text-color1);
+      margin: 20px;
+    }
   }
 }

@@ -1,7 +1,15 @@
 import React, { useState, useEffect } from "react";
 import githubsvg from "../../images/github.svg";
 import Modal from "react-modal";
-const Card = ({ image, title, description, githubLink, logo, context, learned}) => {
+const Card = ({
+  image,
+  title,
+  description,
+  githubLink,
+  logo,
+  context,
+  learned,
+}) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const gitOpen = () => {
@@ -40,13 +48,9 @@ const Card = ({ image, title, description, githubLink, logo, context, learned}) 
       >
         <h3 className="">{title}</h3>
         <h4>Contexte du projet</h4>
-        <p>
-          {context}
-        </p>
+        <p>{context}</p>
         <h4>Ce que j'ai appris</h4>
-        <p>
-          {learned}
-        </p>
+        <p>{learned}</p>
         <h4>Technologies utilisées</h4>
         <div className="logo-container">
           {logo.map((item, index) => (

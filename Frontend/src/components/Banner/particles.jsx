@@ -22,7 +22,7 @@ const ParticlesComponent = (props) => {
 
   const options = useMemo(
     () => ({
-      fullScreen:false,
+      fullScreen: false,
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -32,7 +32,7 @@ const ParticlesComponent = (props) => {
           },
           onHover: {
             enable: true,
-            mode: 'grab',
+            mode: "grab",
           },
         },
         modes: {
@@ -84,7 +84,7 @@ const ParticlesComponent = (props) => {
       },
       detectRetina: true,
     }),
-    [],
+    []
   );
 
   return <Particles id={props.id} init={particlesLoaded} options={options} />;

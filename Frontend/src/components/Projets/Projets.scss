@@ -61,7 +61,7 @@
       font-weight: bold;
       color: #333;
       margin: 16px;
-      text-align: center;
+      text-align: left;
       margin: 5px 0;
     }
 
@@ -69,7 +69,7 @@
       color: #666;
       line-height: 1.4;
       margin: 0;
-      text-align: center;
+      text-align: justify;
     }
     .logo-container {
       position: absolute;
@@ -142,7 +142,6 @@
   max-width: 80vw;
   max-height: 80vh;
   overflow-y: auto;
-  
 
   .logo-container {
     display: flex;
@@ -176,6 +175,49 @@
       img {
         width: 20px;
         height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #projets {
+    .swiper {
+      overflow: visible !important; /* Permet aux cartes d'être visibles au-delà de leurs bordures */
+    }
+    .card {
+      max-width: 30vw;
+      .card-title {
+        text-align: left;
+        margin: 5px 0;
+      }
+
+      .card-description {
+        line-height: 1.2;
+        margin: 0;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #projets {
+    padding-top: 10px;
+    .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+      padding-top: 10px;
+    }
+    .card {
+      max-width: 45vw;
+      .card-title {
+        text-align: left;
+        margin: 5px 0;
+      }
+
+      .card-description {
+        line-height: 1.2;
+        margin: 0;
+        text-align: justify;
       }
     }
   }
