@@ -40,11 +40,25 @@ function Projets() {
           {/* Swiper Carousel */}
           <Swiper
             spaceBetween={20}
-            slidesPerView={3} // Nombre de cartes affichées à la fois
+            slidesPerView={3} // Valeur par défaut
             navigation
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             modules={[Navigation, Pagination, Scrollbar]}
+            breakpoints={{
+              // Quand la largeur de la fenêtre est >= 1024px
+              1024: {
+                slidesPerView: 3, // Affiche 3 slides
+              },
+              // Quand la largeur de la fenêtre est entre 768px et 1024px
+              768: {
+                slidesPerView: 2, // Affiche 2 slides
+              },
+              // Quand la largeur de la fenêtre est < 768px
+              0: {
+                slidesPerView: 1, // Affiche 1 slide
+              },
+            }}
           >
             {Cards.map((card) => (
               <SwiperSlide key={card.id}>

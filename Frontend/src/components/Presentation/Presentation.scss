@@ -28,3 +28,20 @@
     }
   }
 }
+
+
+
+@media (max-width: 768px) {
+  #presentation {
+    .presentation {
+      .presentation-container {
+        padding: 0;
+        flex-direction: column;
+        .presentation-text {
+          width: 100%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
