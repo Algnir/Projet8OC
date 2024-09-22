@@ -56,26 +56,29 @@ const ContactForm = () => {
         <h2>Contactez-moi</h2>
         <form onSubmit={handleSubmit}>
           <div>
-            <label>Votre nom:</label>
+            <label htmlFor="name">Votre nom:</label>
             <input
               type="text"
+              id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
             />
           </div>
           <div>
-            <label>Votre email:</label>
+            <label htmlFor="email">Votre email:</label>
             <input
               type="email"
+              id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
           <div>
-            <label>Message:</label>
+            <label htmlFor="message">Message:</label>
             <textarea
+              id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
