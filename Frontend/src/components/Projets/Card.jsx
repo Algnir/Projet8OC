@@ -43,7 +43,7 @@ const Card = ({
               <img
                 key={index}
                 src={item}
-                className="logo-modal"
+                className="logo"
                 alt={`logo de ${logoName}`}
               />
             );
