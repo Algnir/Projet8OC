@@ -8,6 +8,16 @@
       name="description"
       content="Portfolio de Clovis PATOUÉ, développeur front-end."
     />
+    <script>
+      // Création de la politique Trusted Types
+      if (window.TrustedTypes) {
+        TrustedTypes.createPolicy('default', {
+          createScript: (input) => {
+            return input;
+          },
+        });
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
