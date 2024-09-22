@@ -64,6 +64,7 @@ function Projets() {
               <SwiperSlide key={card.id}>
                 <Card
                   image={card.img}
+                  alt={card.alt}
                   title={card.title}
                   description={card.description}
                   githubLink={card.github}

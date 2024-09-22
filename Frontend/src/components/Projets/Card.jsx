@@ -9,6 +9,7 @@ const Card = ({
   logo,
   context,
   learned,
+  alt
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -54,7 +55,7 @@ const Card = ({
         <h4>Technologies utilisées</h4>
         <div className="logo-container">
           {logo.map((item, index) => (
-            <img key={index} src={item} className="logo-modal" />
+            <img key={index} src={item} className="logo-modal" alt={alt} />
           ))}
         </div>
         <div className="button-container">
