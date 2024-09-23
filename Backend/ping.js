@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const url = 'https://projet8oc.onrender.com/ping';
+const url = 'https://projet8oc.onrender.com/';
 
 // Fonction pour pinguer le serveur pour éviter qu'il soit inactif
 function pingServer() {

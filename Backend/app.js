@@ -42,7 +42,7 @@ app.use(helmet({
         objectSrc: ["'none'"], // Interdit les objets externes comme Flash
         baseUri: ["'self'"], // Restreint la balise <base> à ce domaine
         formAction: ["'self'"], // Limite les soumissions de formulaires au domaine
-        imgSrc: ["'self'", "https://server-portfolio-2fj4.onrender.com/", "data:"], // Autorise les images du domaine et les images inline en base64
+        imgSrc: ["'self'", "data:"], // Autorise les images du domaine et les images inline en base64
         upgradeInsecureRequests: [], // S'assure que toutes les requêtes HTTP sont converties en HTTPS
         connectSrc: ["'self'", "https://algnir.github.io"], // Autorise les connexions vers l'API externe
         frameAncestors: ["'none'"], // Empêche l'inclusion de la page dans une iframe (protection contre le clickjacking)
