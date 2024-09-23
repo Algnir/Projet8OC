@@ -58,6 +58,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Les routes
 app.use('/api/projects', projectsRoutes);
 app.use('/api/contact', formRoutes);
+app.get('/ping', (req, res) => {
+  res.status(200).send('OK');
+});
 
 app.use('/images', cors({
     origin: 'https://algnir.github.io',
