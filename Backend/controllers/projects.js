@@ -1,7 +1,7 @@
 const Project = require("../models/Project");
 const fs = require("fs");
 
-exports.getProjectsByTag = (req, res, next) => {
+exports.getProjects = (req, res, next) => {
   Project.find()
     .then((projects) => {
       res.status(200).json(projects); // Envoie des projets filtrés en réponse
