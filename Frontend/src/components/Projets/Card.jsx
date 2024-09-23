@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import githubsvg from "../../images/github.svg";
 import Modal from "react-modal";
-<<<<<<< HEAD
-=======
-
->>>>>>> deployforgithub
 const Card = ({
   image,
   title,
@@ -13,10 +9,7 @@ const Card = ({
   logo,
   context,
   learned,
-<<<<<<< HEAD
-=======
   alt,
->>>>>>> deployforgithub
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 

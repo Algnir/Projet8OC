@@ -10,11 +10,7 @@ function Presentation() {
             <img
               className="presentation-image"
               src={Image}
-<<<<<<< HEAD
-              alt="Presentation"
-=======
               alt="Image de Presentation"
->>>>>>> deployforgithub
             />
             <div className="presentation-text">
               <h3>Clovis PATOUÉ, développeur web.</h3>

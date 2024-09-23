@@ -56,46 +56,29 @@ const ContactForm = () => {
         <h2>Contactez-moi</h2>
         <form onSubmit={handleSubmit}>
           <div>
-<<<<<<< HEAD
-            <label>Votre nom:</label>
-            <input
-              type="text"
-=======
             <label htmlFor="name">Votre nom:</label>
             <input
               type="text"
               id="name"
->>>>>>> deployforgithub
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
             />
           </div>
           <div>
-<<<<<<< HEAD
-            <label>Votre email:</label>
-            <input
-              type="email"
-=======
             <label htmlFor="email">Votre email:</label>
             <input
               type="email"
               id="email"
->>>>>>> deployforgithub
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
           <div>
-<<<<<<< HEAD
-            <label>Message:</label>
-            <textarea
-=======
             <label htmlFor="message">Message:</label>
             <textarea
               id="message"
->>>>>>> deployforgithub
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
