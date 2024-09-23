@@ -9,6 +9,14 @@ const bodyParser = require('body-parser');
 const projectsRoutes = require('./routes/projects');
 const formRoutes = require('./routes/contact');
 
+// Utilisation de CORS
+app.use(cors({
+    origin: 'https://algnir.github.io', // Autorise uniquement ce domaine
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    exposedHeaders: ['Content-Disposition']
+  }));
+
 // Connexion à MongoDB avec l'enviro
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connexion à MongoDB réussie !'))
