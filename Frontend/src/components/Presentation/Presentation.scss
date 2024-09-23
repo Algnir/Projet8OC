@@ -35,10 +35,10 @@
       .presentation-container {
         padding: 0;
         flex-direction: column;
-        .presentation-image{
+       .presentation-image {
+          width:fit-content;
           max-height: 400px;
-          width: auto;
-          max-width:90vh;
+          width: 400px;
           margin-right: 20px;
           border-radius: 8px;
           object-fit: cover;
