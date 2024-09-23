@@ -24,13 +24,16 @@ const ContactForm = () => {
     const contactData = { name, email, message, captchaToken };
 
     try {
-      const response = await fetch("http://localhost:4000/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(contactData),
-      });
+      const response = await fetch(
+        "https://server-portfolio-2fj4.onrender.com/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(contactData),
+        }
+      );
 
       if (response.ok) {
         setStatus("Message envoyé avec succès!");
@@ -53,26 +56,46 @@ const ContactForm = () => {
         <h2>Contactez-moi</h2>
         <form onSubmit={handleSubmit}>
           <div>
+<<<<<<< HEAD
             <label>Votre nom:</label>
             <input
               type="text"
+=======
+            <label htmlFor="name">Votre nom:</label>
+            <input
+              type="text"
+              id="name"
+>>>>>>> deployforgithub
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
             />
           </div>
           <div>
+<<<<<<< HEAD
             <label>Votre email:</label>
             <input
               type="email"
+=======
+            <label htmlFor="email">Votre email:</label>
+            <input
+              type="email"
+              id="email"
+>>>>>>> deployforgithub
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
           <div>
+<<<<<<< HEAD
             <label>Message:</label>
             <textarea
+=======
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+>>>>>>> deployforgithub
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required

@@ -15,7 +15,7 @@ function Projets() {
 
   const fetchCards = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/api/projects/`);
+      const response = await fetch(`https://server-portfolio-2fj4.onrender.com/api/projects/`);
       if (!response.ok) {
         throw new Error("Erreur lors de la récupération des données");
       }
@@ -64,6 +64,7 @@ function Projets() {
               <SwiperSlide key={card.id}>
                 <Card
                   image={card.img}
+                  alt={card.alt}
                   title={card.title}
                   description={card.description}
                   githubLink={card.github}

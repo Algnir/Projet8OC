@@ -55,14 +55,18 @@
       padding: 10px 20px;
       border: none;
       border-radius: 5px;
+<<<<<<< HEAD
       background-color: #4caf50;
+=======
+      background-color: #38853C;
+>>>>>>> deployforgithub
       color: var(--secondary-color);
       font-size: 16px;
       cursor: pointer;
       margin-top: 10px;
 
       &:hover {
-        background-color: #45a049;
+        background-color: #307a2b;
       }
     }
 
@@ -77,5 +81,16 @@
     margin-top: 15px;
     color: green;
     font-weight: bold;
+  }
+}
+
+
+@media (max-width: 768px){
+  #contact{
+    .Form{
+      form {
+        max-width: 300px;
+      }
+    }
   }
 }
