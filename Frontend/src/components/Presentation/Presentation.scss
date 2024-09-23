@@ -35,6 +35,15 @@
       .presentation-container {
         padding: 0;
         flex-direction: column;
+        .presentation-image{
+          max-height: 400px;
+          width: auto;
+          max-width:90vh;
+          margin-right: 20px;
+          border-radius: 8px;
+          object-fit: cover;
+          object-position: top;
+        }
         .presentation-text {
           width: 100%;
           text-align: left;
