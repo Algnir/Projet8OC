@@ -25,7 +25,7 @@ const ContactForm = () => {
 
     try {
       const response = await fetch(
-        "https://server-portfolio-2fj4.onrender.com/api/contact",
+        "https://projet8oc.onrender.com/api/contact",
         {
           method: "POST",
           headers: {

@@ -15,7 +15,7 @@ function Projets() {
 
   const fetchCards = async () => {
     try {
-      const response = await fetch(`https://server-portfolio-2fj4.onrender.com/api/projects/`);
+      const response = await fetch(`https://projet8oc.onrender.com/api/projects/`);
       if (!response.ok) {
         throw new Error("Erreur lors de la récupération des données");
       }
