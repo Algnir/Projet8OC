@@ -10,6 +10,7 @@ const helmet = require('helmet');
 
 const projectsRoutes = require('./routes/projects');
 const formRoutes = require('./routes/contact');
+const pingServer = require('./pingServer'); // fonction qui ping pour éviter que le serveur soit inactif sur render
 
 
 
@@ -66,5 +67,7 @@ app.use('/images', cors({
     next();
   }, express.static(path.join(__dirname, './images')));
 
+setInterval(pingServer, 600000);
+pingServer();
 
 module.exports = app;
