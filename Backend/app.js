@@ -10,7 +10,7 @@ const helmet = require('helmet');
 
 const projectsRoutes = require('./routes/projects');
 const formRoutes = require('./routes/contact');
-const pingServer = require('./pingServer'); // fonction qui ping pour éviter que le serveur soit inactif sur render
+const pingServer = require('./ping'); // fonction qui ping pour éviter que le serveur soit inactif sur render
 
 
 
