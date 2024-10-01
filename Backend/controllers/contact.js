@@ -5,12 +5,7 @@ exports.form = (req, res) => {
 
   // Configuration du transporter de l'email
   let transporter = nodemailer.createTransport({
-    host: "smtp-mail.outlook.com",
-    secureConnection: false,
-    port: 587,
-    tls: {
-      ciphers: "SSLv3",
-    },
+    service: "gmail",
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS
